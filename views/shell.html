@@ -8,7 +8,7 @@
         <meta name="description" content="A Web-based IDE for Teams using Golang, do your development anytime, anywhere."/>
         <meta name="author" content="B3log">
         
-        <link rel="stylesheet" href="{{.conf.StaticServer}}/static/css/shell.css?{{.conf.StaticResourceVersion}}">
+        <link rel="stylesheet" href="{{.conf.StaticServer}}{{.conf.Context}}/static/css/shell.css?{{.conf.StaticResourceVersion}}">
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     </head>
@@ -26,10 +26,10 @@
             },
                     wideSessionId: {{.sid}}
             };</script>
-        <script type="text/javascript" src="{{.conf.StaticServer}}/static/js/lib/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="{{.conf.StaticServer}}/static/js/lib/reconnecting-websocket.js"></script>
+        <script type="text/javascript" src="{{.conf.StaticServer}}{{.conf.Context}}/static/js/lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="{{.conf.StaticServer}}{{.conf.Context}}/static/js/lib/reconnecting-websocket.js"></script>
 
 
-        <script type="text/javascript" src="{{.conf.StaticServer}}/static/js/shell.js?{{.conf.StaticResourceVersion}}"></script>        
+        <script type="text/javascript" src="{{.conf.StaticServer}}{{.conf.Context}}/static/js/shell.js?{{.conf.StaticResourceVersion}}"></script>        
     </body>
 </html>
